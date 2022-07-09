@@ -4,13 +4,42 @@
 
 body {
     margin: 0;
+    color: #b6b6b6;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat';
+    color: #333;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+ul {
+    margin: 0;
+    left: 0;
+    list-style: none;
+}
+
+/* header */
 .header {
     padding: 17px 0;
 }
@@ -27,18 +56,17 @@ body {
     list-style-type: none;
     display: flex;
     gap: 55px;
+    font-family: 'Monserrat';
 }
 
  .header .logo {
     font-size: 30px;
     line-height: 37px;
-    font-family: 'Montserrat';
     color: #95E1D3;
     margin: 0;
 }
 
 .menu-link {
-    font-family: 'Montserrat';
     text-decoration: none;
     text-transform: uppercase;
     color: #95E1D3;
@@ -46,9 +74,91 @@ body {
     line-height: 17px;
     padding-bottom: 10px;
     transition: all .3s;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat';
 }
 .menu-link:hover{
     color: #F38181;
     border-bottom: 3px solid #F38181;
+}
+
+/* services */
+
+.servieces {
+    padding: 50px 0;
+}
+
+.section_title {
+    text-align: center;
+
+} 
+
+.section_title .uptitle {
+     font-family: 'Kaushan Script';
+     font-size: 24px;
+     line-height: 35px;
+     margin: 0;
+     color: #333;
+}
+
+hr {
+    background: #F38181;
+    margin-bottom: 65px;
+    width: 60px;
+    height: 4px;
+    border: none;
+    margin-top: 40px;
+}
+
+.section_title h2 {
+    margin: 20px 0 40px;
+    line-height: 37px;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+.services_list_item {
+    /* display: flex;
+    flex-direction: row;  */
+    width: calc(100% / 3);
+    padding: 0 35px;
+}
+
+.services_list {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+
+} 
+
+img {
+    margin: 20px;
+}
+
+.services_list_item p {
+    margin-left: 76px;
+    margin-top: -20px;
+}
+
+.services_list_item {
+    width: calc(100% / 3);
+    padding: 0 35px;
+}
+
+
+/* .services_list_item img {
+    position: absolute;
+    margin-left: -60px;
+    margin-top: 18px;
+    width: 37px;
+    height: 37px;
+} */
+
+.services_list {
+    display: flex;
+    flex-direction: row;
 }
