@@ -51,6 +51,49 @@ ul {
     align-items: center;
 }
 
+/* mobile menu */
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked ~ nav {
+    top: 80px;
+}
+
+.toggle_btn {
+    display: none;
+}
+
+
+.toggle_btn span {
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: #95E1D3;
+    position: relative;
+}
+
+.toggle_btn span::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: #95E1D3;
+    position: absolute;
+    top: -8px;
+}
+
+.toggle_btn span::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 30px;
+    background: #95E1D3;
+    position: absolute;
+    top: 8px;
+}
+
 .menu-list{
     margin: 0;
     padding-left: 0;
@@ -83,8 +126,24 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .toggle_btn {
+        display: block;
+    }
+
     nav {
-        display: none;
+        position: absolute;
+        top: -100%;
+        width: 100%;
+        left: 0;
+        background: #fff;
+        box-shadow: 0 10px 10px #888;
+        padding: 10px;
+        transition: top .5s;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -204,6 +263,43 @@ img {
     position: relative;
 }
 
+.gradient{
+    display: flex;
+    column-gap: 1px;
+}
+
+.social_list {
+    display: flex;
+    column-gap: 1px;
+    position: absolute;
+    top: calc(50% - (57px / 2));
+    transform: translateX(-50%);
+    opacity: 0;
+}
+
+.social_list_item {
+    width: 57px;
+    height: 57px;
+    background: #FCE38A;
+    transition: background .3s;
+}
+
+.social_list_item:hover {
+    background: #95E1D3;
+}
+
+.social_link {
+    height: 100%;
+    display: block;
+    padding: 15px 5px 0;
+}
+
+.social_link img {
+    height: 26px;
+    width: auto;
+    margin: 0 auto;
+}
+
 .gradient::before {
     content: '';
     display: block;
@@ -217,9 +313,12 @@ img {
     transition: opacity .3s;
 }
 
-.gradient:hover::before {
+.gradient:hover::before,
+.container:hover .social_list {
     opacity: 1;
 }
+
+
 
 .team_list_member img {
     display: block;
