@@ -128,6 +128,9 @@ ul {
 @media (max-width: 768px) {
     .toggle_btn {
         display: block;
+        width: 30px;
+        height: 25px;
+        position: relative;
     }
 
     nav {
