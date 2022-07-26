@@ -255,6 +255,10 @@ img {
     column-gap: 30px;
 }
 
+.team_list_member h3, p {
+    text-align: center;
+}
+
 .member_photo_wrap {
     position: relative;
 }
@@ -413,3 +417,4 @@ footer p {
         margin: 40px;
     }
 }
+
