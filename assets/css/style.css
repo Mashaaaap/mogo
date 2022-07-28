@@ -382,6 +382,10 @@ span {
     color: #F38181;
 }
 
+.email_btn {
+    display: flex;
+}
+
 .email_btn button {
     width: 150px;
     height: 40px;
@@ -402,6 +406,7 @@ span {
     font-style: italic;
     padding: 10px;
     border: 2px solid #888;
+    
 }
 
 footer p {
@@ -419,6 +424,9 @@ footer p {
         display: flex;
         flex-direction: column-reverse;
         margin: 40px;
+    }
+    .email_btn {
+        justify-content: center;
     }
 }
 
