@@ -183,6 +183,10 @@ hr {
     margin: 0 auto;
 }
 
+hr:active {
+    width: 129px;
+}
+
 .section_title h2 {
     margin: 20px 0 40px;
     line-height: 37px;
@@ -276,7 +280,7 @@ img {
 }
 
 .member_photo_wrap:hover::before,
-.container:hover .social_list {
+.member_photo_wrap:hover .social_list {
     opacity: 1;
 }
 
@@ -418,3 +422,15 @@ footer p {
     }
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #777;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #95E1D3;
+    border-radius: 5px;
+}
