@@ -259,7 +259,7 @@ img {
     column-gap: 30px;
 }
 
-.team_list_member h3, p {
+.names_jobs {
     text-align: center;
 }
 
@@ -423,10 +423,14 @@ footer p {
     .email_btn_text {
         display: flex;
         flex-direction: column-reverse;
-        margin: 40px;
+        text-align: center;
     }
     .email_btn {
         justify-content: center;
+    }
+    .final_line {
+        margin: 0;
+        margin-bottom: 20px;
     }
 }
 
