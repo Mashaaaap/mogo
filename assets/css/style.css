@@ -65,6 +65,9 @@ ul {
     display: none;
 }
 
+.burger_menu {
+    margin-top: 20px;
+}
 
 .toggle_btn span {
     display: block;
