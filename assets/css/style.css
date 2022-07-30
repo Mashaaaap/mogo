@@ -12,7 +12,12 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
+}
 
+.wrapper {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
 }
 
 .container {
@@ -58,8 +63,23 @@ ul {
 }
 
 #toggle:checked ~ nav {
-    top: 80px;
+    right: 0px;
+    opacity: 1px;
 }
+
+#toggle:checked ~ .toggle_btn span {
+    transform: rotate(45deg);
+
+}
+
+#toggle:checked ~ .toggle_btn span:after {
+   top: 0;
+}
+
+#toggle:checked ~ .toggle_btn span::before {
+    transform: rotate(-90deg);
+    top: 0;
+} 
 
 .toggle_btn {
     display: none;
@@ -75,6 +95,7 @@ ul {
     width: 30px;
     background: #95E1D3;
     position: relative;
+    transition: transform .4s ;
 }
 
 .toggle_btn span::before {
@@ -85,6 +106,7 @@ ul {
     background: #95E1D3;
     position: absolute;
     top: -8px;
+    transition: transform .4s top .4s;
 }
 
 .toggle_btn span::after {
@@ -95,6 +117,7 @@ ul {
     background: #95E1D3;
     position: absolute;
     top: 8px;
+    transition: top .4s ;
 }
 
 .menu-list{
@@ -138,9 +161,9 @@ ul {
 
     nav {
         position: absolute;
-        top: -100%;
+        top: 80px;
+        right: -105%;
         width: 100%;
-        left: 0;
         background: #fff;
         box-shadow: 0 10px 10px #888;
         padding: 10px;
@@ -412,6 +435,10 @@ span {
     
 }
 
+.email_btn input:focus {
+    outline: #888;
+}
+
 footer p {
     color: #333;
 }
@@ -442,7 +469,7 @@ footer p {
 }
 
 ::-webkit-scrollbar-track {
-    background: #777;
+    background: #FFF;
 }
 
 ::-webkit-scrollbar-thumb {
